@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Йододефіцит: Наслідки та Профілактика</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2e0e6c6fd.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --accent: #00bcd4;
+            --bg-gradient: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--bg-gradient);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 100px 20px;
+            text-align: center;
+            background: var(--accent);
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card i {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #0097a7;
+        }
+
+        .info {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: white;
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .info.visible {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            background: #f0f0f0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header data-aos="fade-down">
+        <h1>Йододефіцит в організмі людини</h1>
+        <p>Дізнайся про його наслідки, профілактику та як захистити своє здоров'я</p>
+    </header>
+
+    <section data-aos="fade-up">
+        <h2 class="section-title">🔍 Що таке йододефіцит?</h2>
+        <p>Йод — це незамінний мікроелемент для правильного функціонування щитоподібної залози. Дефіцит йоду призводить
+            до серйозних наслідків для здоров’я, особливо у дітей та підлітків.</p>
+        <button class="button info-button" data-target="info1">Детальніше</button>
+        <div id="info1" class="info">
+            <p>Йод входить до складу гормонів щитоподібної залози (T3 і T4), які відповідають за обмін речовин, розвиток
+                центральної нервової системи та ріст клітин. Його нестача може спричинити зоб, гіпотиреоз та інші
+                захворювання.</p>
+        </div>
+    </section>
+
+    <section data-aos="fade-up">
+        <h2 class="section-title">💥 Наслідки дефіциту йоду</h2>
+        <div class="card-grid">
+            <div class="card">
+                <i class="fas fa-brain"></i>
+                <h3>Зниження розумових здібностей</h3>
+                <button class="button info-button" data-target="info2">Детальніше</button>
+                <div id="info2" class="info">
+                    <p>Недостатність йоду може призвести до зниження когнітивних функцій, погіршення пам'яті та
+                        зменшення інтелектуального розвитку.</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-baby"></i>
+                <h3>Порушення розвитку у дітей</h3>
+                <button class="button info-button" data-target="info3">Детальніше</button>
+                <div id="info3" class="info">
+                    <p>У дітей дефіцит йоду може спричинити затримку фізичного розвитку, зниження зростання та
+                        відставання у розумовому розвитку.</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Серцево-судинні проблеми</h3>
+                <button class="button info-button" data-target="info4">Детальніше</button>
+                <div id="info4" class="info">
+                    <p>Гормональні збої через дефіцит йоду можуть впливати на серце, спричиняючи аритмію, підвищений
+                        артеріальний тиск та інші захворювання серцево-судинної системи.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-aos="fade-up">
+        <h2 class="section-title">🛡️ Профілактика</h2>
+        <div class="card-grid">
+            <div class="card">
+                <i class="fas fa-apple-alt"></i>
+                <h3>Харчування з йодованою сіллю</h3>
+                <button class="button info-button" data-target="info5">Детальніше</button>
+                <div id="info5" class="info">
+                    <p>Щоденне вживання йодованої солі допомагає підтримувати нормальний рівень йоду в організмі та
+                        запобігає розвитку дефіциту.</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-user-md"></i>
+                <h3>Медичне обстеження щороку</h3>
+                <button class="button info-button" data-target="info6">Детальніше</button>
+                <div id="info6" class="info">
+                    <p>Регулярне обстеження у ендокринолога та вимірювання рівня гормонів щитоподібної залози дозволяють
+                        вчасно виявити дефіцит йоду.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Проєкт "Йододефіцит". Усі права захищено.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        document.querySelectorAll('.info-button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const info = document.getElementById(btn.dataset.target);
+                info.classList.toggle('visible');
+            });
+        });
+    </script>
+</body>
+
+</html>
